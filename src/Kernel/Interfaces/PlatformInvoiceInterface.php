@@ -10,7 +10,7 @@ interface PlatformInvoiceInterface
     public function setState(InvoiceState $state);
     public function loadByIncrementId($incrementId);
     public function getIncrementId();
-    public function prepareFor(PlatformOrderInterface $order);
+    public function prepareFor(PlatformOrderInterface $order, $itemsQuantity);
     public function createFor(PlatformOrderInterface $order);
     public function getPlatformInvoice();
     public function canRefund();
